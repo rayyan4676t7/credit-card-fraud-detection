@@ -1,25 +1,39 @@
 # Credit Card Fraud Detection using Machine Learning
 
-## Overview
-This project focuses on detecting fraudulent credit card transactions using machine learning.
+## 📌 Overview
+This project builds a machine learning model to detect fraudulent credit card transactions.
 
-## Problem
-The dataset is highly imbalanced, with very few fraud cases compared to normal transactions.
+## ⚠️ Problem
+The dataset is highly imbalanced, with very few fraudulent transactions compared to normal ones.
 
-## Approach
-- Data analysis and visualization
+## ⚙️ Approach
+- Data preprocessing and scaling
 - Logistic Regression model
 - Handling class imbalance using class weighting
-- Evaluation using precision and recall
+- Model evaluation using precision and recall
 
-## Results
-- Standard model: Higher precision, lower recall
-- Balanced model: Higher recall, lower precision
+## 📊 Results
+| Model                         | Precision (Fraud) | Recall (Fraud) | Accuracy |
+|------|------------------|----------------|----------|
+| Logistic Regression            |0.80                   0.57               0.67  
+| Weighted Logistic Regression   |0.20                   0.93               0.33 |
 
-This demonstrates the trade-off between detecting all frauds and minimizing false positives.
+## 🧠 Key Insight
+There is a tradeoff between precision and recall:
+- High precision → fewer false alarms
+- High recall → more frauds detected
 
-## Tools Used
-- Python
-- Pandas
-- Scikit-learn
-- Plotly / Matplotlib
+In fraud detection, **recall is more important** because missing fraud is costly.
+
+## ▶️ How to Run
+1. Open notebook in Google Colab
+2. Upload dataset
+3. Run all cells
+
+## 🚀 Future Improvements
+- Use Random Forest / XGBoost
+- Improve recall further
+- Build real-time fraud detection system
+
+## 📌 Author
+Rayyan Abdul Waheed
