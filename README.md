@@ -14,9 +14,8 @@ The dataset is highly imbalanced, with very few fraudulent transactions compared
 
 ## 📊 Results
 | Model                         | Precision (Fraud) | Recall (Fraud) | Accuracy |
-|------|------------------|----------------|----------|
-| Logistic Regression            |0.80                   0.57               0.67  
-| Weighted Logistic Regression   |0.20                   0.93               0.33 |
+| Logistic Regression            |0.80              |     0.57       |       0.67  |
+| Weighted Logistic Regression   |0.20              |     0.93       |        0.33 |
 
 ## 🧠 Key Insight
 There is a tradeoff between precision and recall:
