@@ -13,9 +13,13 @@ The dataset is highly imbalanced, with very few fraudulent transactions compared
 - Model evaluation using precision and recall
 
 ## 📊 Results
+
 | Model                         | Precision (Fraud) | Recall (Fraud) | Accuracy |
-| Logistic Regression            |0.80              |     0.57       |       0.67  |
-| Weighted Logistic Regression   |0.20              |     0.93       |        0.33 |
+|------------------------------|------------------|----------------|----------|
+| Logistic Regression          | 0.80             | 0.57           | 0.67     |
+| Weighted Logistic Regression | 0.20             | 0.93           | 0.33     |
+
+**Insight:** The weighted model significantly improves recall (0.93), meaning it detects most fraud cases, but at the cost of precision, leading to more false positives.
 
 ## 🧠 Key Insight
 There is a tradeoff between precision and recall:
@@ -23,6 +27,11 @@ There is a tradeoff between precision and recall:
 - High recall → more frauds detected
 
 In fraud detection, **recall is more important** because missing fraud is costly.
+
+## 📊 Results Visualization
+
+### Confusion Matrix
+![Confusion Matrix](confusion.matrix.png)
 
 ## ▶️ How to Run
 1. Open notebook in Google Colab
